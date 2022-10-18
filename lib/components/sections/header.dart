@@ -26,7 +26,6 @@ class Header extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-                // Text('\$1000.00', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                 Text.rich(
                   TextSpan(
                     text: '\$',
@@ -39,10 +38,10 @@ class Header extends StatelessWidget {
                     ],
                   ),
                 ),
-                Text('Balanço disponível', style: TextStyle(fontSize: 16)),
+                Text('Balanço disponível', style: TextStyle(fontSize: 16, color: Colors.white)),
               ],
             ),
-            const Icon(Icons.account_circle, size: 48),
+            const Icon(Icons.account_circle, size: 48, color: Colors.white),
           ],
         ),
       ),

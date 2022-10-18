@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_estilizando_layouts_alr/components/box_card.dart';
 import 'package:flutter_estilizando_layouts_alr/components/sections/header.dart';
 
 class Home extends StatelessWidget {
@@ -10,6 +11,9 @@ class Home extends StatelessWidget {
       body: Column(
         children: [
           Header(),
+          BoxCard(
+            boxContent: const Text('Olá box card'),
+          ),
         ],
       ),
     );
