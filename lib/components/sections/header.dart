@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_estilizando_layouts_alr/themes/theme_colors.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -10,11 +11,7 @@ class Header extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [
-            Color.fromRGBO(103, 99, 234, 1),
-            Color.fromRGBO(155, 105, 254, 1),
-            Color.fromRGBO(195, 107, 255, 1),
-          ],
+          colors: ThemeColors.headerGradient,
         ),
         borderRadius: BorderRadius.vertical(bottom: Radius.circular(15)),
       ),
@@ -25,20 +22,19 @@ class Header extends StatelessWidget {
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 Text.rich(
                   TextSpan(
                     text: '\$',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white,
-                    ),
                     children: [
-                      TextSpan(text: ' 1000.00', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white)),
+                      TextSpan(
+                        text: ' 1000.00',
+                        style: Theme.of(context).textTheme.bodyLarge,
+                      ),
                     ],
                   ),
                 ),
-                Text('Balanço disponível', style: TextStyle(fontSize: 16, color: Colors.white)),
+                const Text('Balanço disponível'),
               ],
             ),
             const Icon(Icons.account_circle, size: 48, color: Colors.white),

@@ -15,7 +15,7 @@ class BoxCard extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         boxShadow: kElevationToShadow[3],
-        color: Colors.grey,
+        color: Theme.of(context).cardColor,
         borderRadius: BorderRadius.circular(15),
       ),
       child: boxContent,
