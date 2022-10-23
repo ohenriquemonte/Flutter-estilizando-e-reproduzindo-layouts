@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_estilizando_layouts_alr/components/box_card.dart';
-import 'package:flutter_estilizando_layouts_alr/components/content_division.dart';
 import 'package:flutter_estilizando_layouts_alr/components/sections/header.dart';
+import 'package:flutter_estilizando_layouts_alr/components/sections/recent_activity.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -12,9 +11,7 @@ class Home extends StatelessWidget {
       body: Column(
         children: const [
           Header(),
-          BoxCard(
-            boxContent: ContentDivision(),
-          ),
+          RecentActivity(),
         ],
       ),
     );
