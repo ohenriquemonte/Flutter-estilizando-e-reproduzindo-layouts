@@ -8,7 +8,7 @@ void main() {
   runApp(
     DevicePreview(
       enabled: !kReleaseMode,
-      builder: (context) => const Alubank(), // Wrap your app
+      builder: (context) => const Alubank(),
     ),
   );
 }
@@ -22,7 +22,7 @@ class Alubank extends StatelessWidget {
       title: 'Alubank',
       theme: MyTheme,
       home: const Home(),
-      builder: DevicePreview.appBuilder, // Add the builder here
+      builder: DevicePreview.appBuilder,
     );
   }
 }

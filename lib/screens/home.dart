@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_estilizando_layouts_alr/components/box_card.dart';
+import 'package:flutter_estilizando_layouts_alr/components/color_dot.dart';
 import 'package:flutter_estilizando_layouts_alr/components/sections/header.dart';
+import 'package:flutter_estilizando_layouts_alr/themes/theme_colors.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -10,9 +12,9 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Header(),
+          const Header(),
           BoxCard(
-            boxContent: const Text('Olá box card'),
+            boxContent: ColorDot(color: ThemeColors.recentActivity['income']),
           ),
         ],
       ),
